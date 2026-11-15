@@ -29,10 +29,10 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Instalar Flutter (stable)
+      - name: Instalar Flutter (3.24.2)
         uses: subosito/flutter-action@v2
         with:
-          channel: stable
+          flutter-version: '3.24.2'
           cache: true
 
       - name: Instalar dependencias
