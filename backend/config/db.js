@@ -20,7 +20,7 @@ require('dotenv').config();
 
 // Pool = varias conexiones listas para usar (más eficiente que abrir/cerrar cada vez)
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',       // Dónde está MySQL (tu PC)
+  host: process.env.DB_HOST || 'localhost',       // Dónde está MySQL
   user: process.env.DB_USER || 'root',            // Usuario de MySQL
   password: process.env.DB_PASSWORD || '',        // Contraseña (viene del .env)
   database: process.env.DB_NAME || 'ecommerceflutter', // Nombre de la BD
