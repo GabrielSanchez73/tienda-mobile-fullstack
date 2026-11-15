@@ -82,10 +82,6 @@ Resumen rápido:
 | Documento | Propósito |
 |---|---|
 | [docs/INSTALACION.md](docs/INSTALACION.md) | Instalación y ejecución (MySQL, backend, Flutter) |
-| [docs/TUTORIAL_GITHUB.md](docs/TUTORIAL_GITHUB.md) | Tutorial local para publicación manual futura en GitHub |
-| [docs/GUIA_EJECUCION_LEGADO.md](docs/GUIA_EJECUCION_LEGADO.md) | Guía de ejecución paso a paso (material de apoyo) |
-| [docs/TUTORIAL_CONSTRUCCION_LEGADO.md](docs/TUTORIAL_CONSTRUCCION_LEGADO.md) | Tutorial de construcción por clases (material de apoyo) |
-| [docs/ANALOGIA_BACKEND.md](docs/ANALOGIA_BACKEND.md) | Analogía explicativa del backend (material de apoyo) |
 | [docs/ESPECIFICACION_PROYECTO.md](docs/ESPECIFICACION_PROYECTO.md) | Especificación/alcance del proyecto |
 
 ## Seguridad y buenas prácticas
