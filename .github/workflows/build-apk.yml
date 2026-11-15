@@ -35,11 +35,6 @@ jobs:
           channel: stable
           cache: true
 
-      # Genera solo los archivos de Android que faltan; no sobrescribe lib/,
-      # pubspec.yaml ni el AndroidManifest.xml del repositorio.
-      - name: Generar carpetas de plataforma
-        run: flutter create --org com.tienda --project-name app_tienda --platforms android .
-
       - name: Instalar dependencias
         run: flutter pub get
 
