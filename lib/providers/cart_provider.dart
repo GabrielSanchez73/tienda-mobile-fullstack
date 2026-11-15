@@ -75,6 +75,26 @@ class CartProvider extends ChangeNotifier {
     }
   }
 
+  Future<bool> checkout() async {
+    if (_items.isEmpty) return false;
+    _isLoading = true;
+    _error = null;
+    notifyListeners();
+    try {
+      final ids = _items.map((i) => i.id).toList();
+      for (final id in ids) {
+        await _api.removeCartItem(id);
+      }
+      await loadCart();
+      return true;
+    } catch (e) {
+      _error = e.toString().replaceFirst('Exception: ', '');
+      _isLoading = false;
+      notifyListeners();
+      return false;
+    }
+  }
+
   void clear() {
     _items = [];
     notifyListeners();
